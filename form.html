@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <style>
+      body {
+        background-color: black;
+        color: yellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>Login</h3>
+
+    <form onsubmit="return loginForm();">
+      <label for="Name">Name</label><br />
+
+      <input
+        id="Name"
+        name="Name"
+        type="text"
+        required
+        placeholder="Ex: Radhika"
+      /><br /><br />
+
+      <label for="Email">Email</label><br />
+
+      <input
+        id="Email"
+        name="email"
+        type="email"
+        required
+        placeholder="Radhika@gmail.com"
+      /><br /><br />
+
+      <label for="Password">Password</label><br />
+
+      <input
+        id="Password"
+        name="Password"
+        type="password"
+        required
+        placeholder="Enter Password"
+      /><br /><br />
+
+      <input type="submit" value="Login" />
+    </form>
+
+    <script>
+      function loginForm() {
+        alert("Login Successful");
+        return false;
+      }
+    </script>
+  </body>
+</html>
